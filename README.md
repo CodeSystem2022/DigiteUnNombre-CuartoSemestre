@@ -18,8 +18,8 @@ Encargados de presentar trabajos utilizando al metodo scrum :
 | ---- | ---- |
 | :lock:  semana 1 | *Luciano* |
 | :lock:  semana 2 | *Luciano* |
-| :lock:  semana 3 | ** |
-| :lock:  semana 4 | ** |
+| :lock:  semana 3 | *Myriam* |
+| :lock:  semana 4 | *Myriam* |
 | :lock:  semana 5 | ** |
 | :lock:  semana 6 | ** |
 | :lock:  semana 7 | ** |
