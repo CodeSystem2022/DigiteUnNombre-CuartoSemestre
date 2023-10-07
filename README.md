@@ -16,18 +16,18 @@ Encargados de presentar trabajos utilizando al metodo scrum :
 
 | ✧ Semana ✧ | ✧ Scrum Master ✧ |
 | ---- | ---- |
-| :lock: Abril semana 1 | ** |
-| :lock: Abril semana 2 | ** |
-| :lock: Abril semana 3 | ** |
-| :lock: Abril semana 4 | ** |
-| :lock: Mayo semana 5 | ** |
-| :lock: Mayo semana 6 | ** |
-| :lock: Mayo semana 7 | ** |
-| :lock: Mayo semana 8 | ** |
-| :lock: Junio semana 9 | ** |
-| :lock: Junio semana 10 | ** |
-| :lock: Junio semana 11 | ** |
-| :lock: Junio semana 12 | ** |
+| :lock:  semana 1 | ** |
+| :lock:  semana 2 | ** |
+| :lock:  semana 3 | ** |
+| :lock:  semana 4 | ** |
+| :lock:  semana 5 | ** |
+| :lock:  semana 6 | ** |
+| :lock:  semana 7 | ** |
+| :lock:  semana 8 | ** |
+| :lock:  semana 9 | ** |
+| :lock:  semana 10 | ** |
+| :lock:  semana 11 | ** |
+| :lock:  semana 12 | ** |
 
 
 ![Código en acción](https://media.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif)
