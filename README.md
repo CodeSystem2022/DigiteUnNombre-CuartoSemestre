@@ -16,18 +16,18 @@ Encargados de presentar trabajos utilizando al metodo scrum :
 
 | ✧ Semana ✧ | ✧ Scrum Master ✧ |
 | ---- | ---- |
-| :lock: Abril semana 1 | *Carolina* |
-| :lock: Abril semana 2 | *Carolina* |
-| :lock: Abril semana 3 | *Gonzalo* |
-| :lock: Abril semana 4 | *Juan Manuel* |
-| :lock: Mayo semana 5 | *Luciano* |
-| :lock: Mayo semana 6 | *Myriam* |
-| :lock: Mayo semana 7 | *Florencia* |
-| :lock: Mayo semana 8 | *Carolina* |
-| :lock: Junio semana 9 | *Gonzalo* |
-| :lock: Junio semana 10 | *Carolina* |
-| :lock: Junio semana 11 | *Luciano* |
-| :lock: Junio semana 12 | *Myriam* |
+| :lock: Abril semana 1 | ** |
+| :lock: Abril semana 2 | ** |
+| :lock: Abril semana 3 | ** |
+| :lock: Abril semana 4 | ** |
+| :lock: Mayo semana 5 | ** |
+| :lock: Mayo semana 6 | ** |
+| :lock: Mayo semana 7 | ** |
+| :lock: Mayo semana 8 | ** |
+| :lock: Junio semana 9 | ** |
+| :lock: Junio semana 10 | ** |
+| :lock: Junio semana 11 | ** |
+| :lock: Junio semana 12 | ** |
 
 
 ![Código en acción](https://media.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif)
