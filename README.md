@@ -39,9 +39,7 @@ Encargados de presentar trabajos utilizando al metodo scrum :
 
 Integrantes Tercer Semestre : 
 
-:heavy_check_mark: Balladares Maria Florencia
-
-:heavy_check_mark: Campderros Gonzalo
+:heavy_check_mark: Balladares Florencia
 
 :heavy_check_mark: Diaz Luciano Gabriel
 
