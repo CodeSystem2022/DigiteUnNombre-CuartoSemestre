@@ -20,14 +20,14 @@ Encargados de presentar trabajos utilizando al metodo scrum :
 | :lock:  semana 2 | *Luciano* |
 | :lock:  semana 3 | *Miriam* |
 | :lock:  semana 4 | *Miriam* |
-| :lock:  semana 5 | ** |
-| :lock:  semana 6 | ** |
-| :lock:  semana 7 | ** |
-| :lock:  semana 8 | ** |
-| :lock:  semana 9 | ** |
-| :lock:  semana 10 | ** |
-| :lock:  semana 11 | ** |
-| :lock:  semana 12 | ** |
+| :lock:  semana 5 | *Carolina* |
+| :lock:  semana 6 | *Luciano* |
+| :lock:  semana 7 | *Florencia* |
+| :lock:  semana 8 | *Carolina* |
+| :lock:  semana 9 | *Luciano* |
+| :lock:  semana 10 | *Florencia* |
+| :lock:  semana 11 | *Miriam* |
+| :lock:  semana 12 | *Miriam* |
 
 
 ![Código en acción](https://media.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif)
