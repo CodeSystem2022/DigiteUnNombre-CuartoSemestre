@@ -108,7 +108,8 @@ Nuestro cliente es un emprendedor apasionado que está lanzando una nueva tienda
 ### **Cronograma:**
 
 > Desarrollo: 3 semanas
-> Pruebas y Refinamiento: 1 semanas
+> 
+> Pruebas y Refinamiento: 5 dias
 
 ### **Presupuesto:**
 > El cliente ha asignado un presupuesto de $600 dls para el desarrollo del sitio web.
