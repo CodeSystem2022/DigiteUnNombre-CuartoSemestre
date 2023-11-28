@@ -111,7 +111,7 @@ Nuestro cliente es un emprendedor apasionado que está lanzando una nueva tienda
 > Pruebas y Refinamiento: 1 semanas
 
 ### **Presupuesto:**
-> El cliente ha asignado un presupuesto de $X para el desarrollo del sitio web.
+> El cliente ha asignado un presupuesto de $600 dls para el desarrollo del sitio web.
 
 ### **Conclusión:**
 
