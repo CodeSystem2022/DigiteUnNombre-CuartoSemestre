@@ -119,3 +119,12 @@ Nuestro cliente es un emprendedor apasionado que está lanzando una nueva tienda
 En respuesta a los objetivos y requerimientos del cliente, se ha desarrollado un brief integral para la creación de un sitio web de tienda de videojuegos. El enfoque se centra en proporcionar una experiencia de usuario atractiva y funcional, desde la navegación intuitiva hasta la implementación de elementos visuales llamativos, como la animación de confeti. La integración segura de Mercado Pago garantiza transacciones fiables, mientras que la accesibilidad y la seguridad han sido prioridades clave.
 
 Con un diseño receptivo y una plataforma escalable para agregar dinámicamente nuevos productos, este proyecto busca no solo cumplir sino superar las expectativas del cliente. El proceso de desarrollo se llevará a cabo de manera iterativa, con pruebas exhaustivas y ajustes según el feedback del cliente. Este brief sienta las bases para un sitio web robusto y atractivo, preparado para destacar en el competitivo mercado de ventas de videojuegos en línea.
+
+
+
+### `VIDEO DEL PROYECTO FINAL`
+
+https://drive.google.com/file/d/1eD5ZVEN4nzotyY3ompTVEPkbPmhekYlt/view?usp=drive_link
+### **POR DIAZ LUCIANO GABRIEL Y JURCZYSZYN MARIA CAROLINA**
+
+
