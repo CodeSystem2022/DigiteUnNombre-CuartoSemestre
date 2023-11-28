@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(https://imgur.com/ma9loJf.jpg) no-repeat center center fixed;
+            background-size: cover;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .game {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            padding: 10px;
+            border: none;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .game img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .game img:hover {
+            box-shadow: 0px 0px 15px 15px #ec731e;
+            transform: rotate(360deg);
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .confeti-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            border-radius: 10px;
+            text-align: left;
+            background: url('https://imgur.com/FWzpFQq.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .modal img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            max-width: 50px;
+            max-height: 50px;
+            border-radius: 50%;
+        }
+
+        .modal input {
+            margin: 10px 0;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .modal button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* Estilo para el botón "Volver al Menú de Videojuegos" de la ventana modal */
+        .modal button#btnVolver {
+            background-color: #2196F3;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* Mejora la fuente de los precios y agrega transición para el carrito */
+        .game p,
+        .cart p {
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: font-size 0.3s;
+        }
+
+        .game:hover p,
+        .cart:hover p {
+            font-size: 1.5em;
+        }
+    </style>
+    <title>Tienda de Videojuegos</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tienda de Videojuegos</h1>
+        <div class="game">
+            <img class="imagen" src="https://imgur.com/lY27qFO.jpg" alt="Battlefield 1">
+            <h2>Battlefield 1</h2>
+            <p>Precio: $50</p>
+            <button onclick="agregarAlCarrito('Battlefield 1', 50)">Agregar al Carrito</button>
+        </div>
+        <div class="game">
+            <img class="imagen" src="https://imgur.com/RjZkDvW.jpg" alt="Dark Siders 2">
+            <h2>Dark Siders 2</h2>
+            <p>Precio: $40</p>
+            <button onclick="agregarAlCarrito('Dark Siders 2', 40)">Agregar al Carrito</button>
+        </div>
+
+        <div class="game">
+            <img class="imagen" src="https://imgur.com/AdcwdmX.jpg" alt="Doom">
+            <h2>Doom</h2>
+            <p>Precio: $30</p>
+            <button onclick="agregarAlCarrito('Doom', 30)">Agregar al Carrito</button>
+        </div>
+
+        <div class="game">
+            <img class="imagen" src="https://imgur.com/e1V3bOP.jpg" alt="Fallout 76">
+            <h2>Fallout 76</h2>
+            <p>Precio: $45</p>
+            <button onclick="agregarAlCarrito('Fallout 76', 45)">Agregar al Carrito</button>
+        </div>
+
+        <div class="game">
+            <img class="imagen" src="https://imgur.com/cEv0IBx.jpg" alt="Medium">
+            <h2>Medium</h2>
+            <p>Precio: $55</p>
+            <button onclick="agregarAlCarrito('Medium', 55)">Agregar al Carrito</button>
+        </div>
+
+        <div class="game">
+            <img class="imagen" src="https://imgur.com/Jtm0nzr.jpg" alt="Mortal Kombat">
+            <h2>Mortal Kombat</h2>
+            <p>Precio: $60</p>
+            <button onclick="agregarAlCarrito('Mortal Kombat', 60)">Agregar al Carrito</button>
+        </div>
+
+        <div class="game">
+            <img class="imagen" src="https://imgur.com/WZEoIIC.jpg" alt="Prey">
+            <h2>Prey</h2>
+            <p>Precio: $35</p>
+            <button onclick="agregarAlCarrito('Prey', 35)">Agregar al Carrito</button>
+        </div>
+
+        <div class="game">
+            <img class="imagen" src="https://imgur.com/0fbQROs.jpg" alt="Witch Fire">
+            <h2>Witch Fire</h2>
+            <p>Precio: $25</p>
+            <button onclick="agregarAlCarrito('Witch Fire', 25)">Agregar al Carrito</button>
+        </div>
+
+    <div class="confeti-container" id="confeti-container"></div>
+
+    <div class="cart">
+        <h2>Carrito de Compra</h2>
+        <ul id="carrito">
+            <!-- Elementos del carrito que se van agregando -->
+        </ul>
+        <!-- Mejora la apariencia  con transición de fuente -->
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="realizarPago()">Pagar con Mercado Pago</button>
+    </div>
+
+    <script>
+        let carrito = [];
+        let total = 0;
+
+        function agregarAlCarrito(nombre, precio) {
+            carrito.push({ nombre, precio });
+            total += precio;
+            actualizarCarrito();
+            lanzarConfeti();
+            setTimeout(detenerConfeti, 2000);
+        }
+
+        function actualizarCarrito() {
+            const carritoElement = document.getElementById('carrito');
+            const totalElement = document.getElementById('total');
+            carritoElement.innerHTML = '';
+
+            carrito.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.nombre} - $${item.precio}`;
+                carritoElement.appendChild(li);
+            });
+
+            totalElement.textContent = total;
+        }
+
+        function mostrarFormularioPago() {
+            const modal = document.createElement('div');
+            modal.classList.add('modal');
+
+            const contenidoModal = `
+                <img src="https://imgur.com/1veEgqV.jpg" alt="Logo" />
+                <h2>Ingrese los datos de pago</h2>
+                <label for="tarjeta">Tarjeta:</label>
+                <input type="text" id="tarjeta" placeholder="Número de tarjeta">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Correo electrónico">
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" placeholder="Dirección">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre">
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" placeholder="Número de DNI">
+
+                <button onclick="completarPago()">Completar Pago</button>
+
+                <!-- Botón Volver al Menú de Videojuegos -->
+                <button id="btnVolver" onclick="volverAlMenu()">Volver al Menú de Videojuegos</button>
+            `;
+
+            modal.innerHTML = contenidoModal;
+            document.body.appendChild(modal);
+        }
+
+        function volverAlMenu() {
+            cerrarModal();
+        }
+
+        function cerrarModal() {
+            const modal = document.querySelector('.modal');
+            modal.parentNode.removeChild(modal);
+        }
+
+        function completarPago() {
+            const tarjeta = document.getElementById('tarjeta').value;
+            const email = document.getElementById('email').value;
+            const direccion = document.getElementById('direccion').value;
+            const nombre = document.getElementById('nombre').value;
+            const dni = document.getElementById('dni').value;
+
+            if (tarjeta && email && direccion && nombre && dni) {
+                alert('Pago realizado con éxito. ¡Gracias por su compra!');
+                limpiarCarrito();
+                cerrarModal();
+            } else {
+                alert('Por favor, complete todos los campos.');
+            }
+        }
+
+        function realizarPago() {
+            mostrarFormularioPago();
+        }
+
+        function lanzarConfeti() {
+            particlesJS('confeti-container', {
+                particles: {
+                    number: {
+                        value: 80,
+                        density: {
+                            enable: true,
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: "#ffffff"
+                    },
+                    shape: {
+                        type: "circle",
+                        stroke: {
+                            width: 0,
+                            color: "#000000"
+                        },
+                        polygon: {
+                            nb_sides: 5
+                        },
+                        image: {
+                            src: "img/github.svg",
+                            width: 100,
+                            height: 100
+                        }
+                    },
+                    opacity: {
+                        value: 0.5,
+                        random: false,
+                        anim: {
+                            enable: false,
+                            speed: 1,
+                            opacity_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    size: {
+                        value: 5,
+                        random: true,
+                        anim: {
+                            enable: false,
+                            speed: 40,
+                            size_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#ffffff",
+                        opacity: 0.4,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 6,
+                        direction: "none",
+                        random: false,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false,
+                        attract: {
+                            enable: false,
+                            rotateX: 600,
+                            rotateY: 1200
+                        }
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: {
+                            enable: true,
+                            mode: "repulse"
+                        },
+                        onclick: {
+                            enable: true,
+                            mode: "push"
+                        },
+                        resize: true
+                    },
+                    modes: {
+                        grab: {
+                            distance: 400,
+                            line_linked: {
+                                opacity: 1
+                            }
+                        },
+                        bubble: {
+                            distance: 400,
+                            size: 40,
+                            duration: 2,
+                            opacity: 8,
+                            speed: 3
+                        },
+                        repulse: {
+                            distance: 200,
+                            duration: 0.4
+                        },
+                        push: {
+                            particles_nb: 4
+                        },
+                        remove: {
+                            particles_nb: 2
+                        }
+                    }
+                },
+                retina_detect: true
+            });
+        }
+
+        function detenerConfeti() {
+            const confetiContainer = document.getElementById('confeti-container');
+            confetiContainer.innerHTML = '';
+        }
+    </script>
+</body>
+</html>
