@@ -81,7 +81,7 @@ Nuestro cliente es un emprendedor apasionado que está lanzando una nueva tienda
 
 > Diseño Responsivo: Implementar consultas de medios para la responsividad.
 
-> Pasarela de Pago: Integrar Mercado Pago para el procesamiento seguro y confiable de pagos.
+> Pasarela de Pago: Integrar Metodo de pago para el procesamiento seguro y confiable de pagos.
 
 > Seguridad: Asegurar conexiones seguras (HTTPS) y seguir las mejores prácticas para el manejo de datos del usuario.
 
